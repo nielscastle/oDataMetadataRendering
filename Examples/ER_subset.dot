@@ -1,0 +1,522 @@
+digraph Data{
+PlanlaegningsUddannelseselement [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>PlanlaegningsUddannelseselement</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_adgangskrav_id" ALIGN="LEFT">esas_adgangskrav_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_adresselinje_1" ALIGN="LEFT">esas_adresselinje_1</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_adresselinje_2" ALIGN="LEFT">esas_adresselinje_2</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_aflysningsaarsag" ALIGN="LEFT">esas_aflysningsaarsag</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_aktivitetsafdeling_id" ALIGN="LEFT">esas_aktivitetsafdeling_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_aktivitetsudbud_id" ALIGN="LEFT">esas_aktivitetsudbud_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_antal_uddannelseselement_gennemfoerelse" ALIGN="LEFT">esas_antal_uddannelseselement_gennemfoerelse</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_gennemfoerelse" ALIGN="LEFT">esas_bedoemmelsesform_gennemfoerelse</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_kmb" ALIGN="LEFT">esas_bedoemmelsesform_kmb</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_multiple_choice_test" ALIGN="LEFT">esas_bedoemmelsesform_multiple_choice_test</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_mundtlig" ALIGN="LEFT">esas_bedoemmelsesform_mundtlig</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_praktisk_proeve" ALIGN="LEFT">esas_bedoemmelsesform_praktisk_proeve</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_projekt" ALIGN="LEFT">esas_bedoemmelsesform_projekt</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_realkompetencevurdering" ALIGN="LEFT">esas_bedoemmelsesform_realkompetencevurdering</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_skriftlig" ALIGN="LEFT">esas_bedoemmelsesform_skriftlig</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsestype" ALIGN="LEFT">esas_bedoemmelsestype</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_deltagerpris_value" ALIGN="LEFT">esas_deltagerpris_value</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_ects" ALIGN="LEFT">esas_ects</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_fordeling" ALIGN="LEFT">esas_fordeling</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fordeling_prio_1" ALIGN="LEFT">esas_fordeling_prio_1</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_fordeling_prio_2" ALIGN="LEFT">esas_fordeling_prio_2</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_fordelingsnoegle_max" ALIGN="LEFT">esas_fordelingsnoegle_max</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fordelingsnoegle_min" ALIGN="LEFT">esas_fordelingsnoegle_min</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fordelingsnoegle_prio_1" ALIGN="LEFT">esas_fordelingsnoegle_prio_1</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fordelingsnoegle_prio_2" ALIGN="LEFT">esas_fordelingsnoegle_prio_2</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_gruppering_id" ALIGN="LEFT">esas_gruppering_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_indskrivningsform_id" ALIGN="LEFT">esas_indskrivningsform_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_kaldenavn" ALIGN="LEFT">esas_kaldenavn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_karakterskala" ALIGN="LEFT">esas_karakterskala</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_loebenr" ALIGN="LEFT">esas_loebenr</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_logisk_startdato" ALIGN="LEFT">esas_logisk_startdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_maximum_antal_deltagere" ALIGN="LEFT">esas_maximum_antal_deltagere</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_minimum_antal_deltagere" ALIGN="LEFT">esas_minimum_antal_deltagere</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_postnummer_by_id" ALIGN="LEFT">esas_postnummer_by_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_publicering_id" ALIGN="LEFT">esas_publicering_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_pue_id" ALIGN="LEFT">esas_pue_id</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_samlaesning_id" ALIGN="LEFT">esas_samlaesning_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_semester_modul_id" ALIGN="LEFT">esas_semester_modul_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_slutdato" ALIGN="LEFT">esas_slutdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_sluttidspunkt" ALIGN="LEFT">esas_sluttidspunkt</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_sprog_id" ALIGN="LEFT">esas_sprog_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_startdato" ALIGN="LEFT">esas_startdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_starttidspunkt" ALIGN="LEFT">esas_starttidspunkt</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_tilmeldingsfrist" ALIGN="LEFT">esas_tilmeldingsfrist</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_tilmeldingslink" ALIGN="LEFT">esas_tilmeldingslink</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_uddannelseselement_id" ALIGN="LEFT">esas_uddannelseselement_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uddannelseselement_planlaegningId" ALIGN="LEFT">esas_uddannelseselement_planlaegningId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_undervisning_ugedag" ALIGN="LEFT">esas_undervisning_ugedag</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_undervisningsform" ALIGN="LEFT">esas_undervisningsform</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+StruktureltUddannelseselement [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>StruktureltUddannelseselement</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_adgangskrav_id" ALIGN="LEFT">esas_adgangskrav_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_afsluttet_inden" ALIGN="LEFT">esas_afsluttet_inden</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_afsluttet_inden_interval" ALIGN="LEFT">esas_afsluttet_inden_interval</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_aktivitet_type" ALIGN="LEFT">esas_aktivitet_type</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_antal_timers_undervisning" ALIGN="LEFT">esas_antal_timers_undervisning</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_antal_uger_foer_periode_start" ALIGN="LEFT">esas_antal_uger_foer_periode_start</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_gennemfoerelse" ALIGN="LEFT">esas_bedoemmelsesform_gennemfoerelse</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_kmb" ALIGN="LEFT">esas_bedoemmelsesform_kmb</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_multiple_choice_test" ALIGN="LEFT">esas_bedoemmelsesform_multiple_choice_test</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_mundlig" ALIGN="LEFT">esas_bedoemmelsesform_mundlig</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_praktisk_proeve" ALIGN="LEFT">esas_bedoemmelsesform_praktisk_proeve</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_projekt" ALIGN="LEFT">esas_bedoemmelsesform_projekt</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_realkompetencevurdering" ALIGN="LEFT">esas_bedoemmelsesform_realkompetencevurdering</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsesform_skriftlig" ALIGN="LEFT">esas_bedoemmelsesform_skriftlig</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_bedoemmelsestype" ALIGN="LEFT">esas_bedoemmelsestype</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_beskrivelse" ALIGN="LEFT">esas_beskrivelse</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_beskrivelse_engelsk" ALIGN="LEFT">esas_beskrivelse_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_betingelser_laast" ALIGN="LEFT">esas_betingelser_laast</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_ects" ALIGN="LEFT">esas_ects</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_ects_kraevet" ALIGN="LEFT">esas_ects_kraevet</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_ects_max" ALIGN="LEFT">esas_ects_max</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_ects_min" ALIGN="LEFT">esas_ects_min</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_eksamenssprog_id" ALIGN="LEFT">esas_eksamenssprog_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_fagkode_niveau" ALIGN="LEFT">esas_fagkode_niveau</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_fagtype" ALIGN="LEFT">esas_fagtype</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fejlbesked_fra_inrule" ALIGN="LEFT">esas_fejlbesked_fra_inrule</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_fordeling" ALIGN="LEFT">esas_fordeling</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fordeling_prio_1" ALIGN="LEFT">esas_fordeling_prio_1</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_fordeling_prio_2" ALIGN="LEFT">esas_fordeling_prio_2</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_fordelingsnoegle_max" ALIGN="LEFT">esas_fordelingsnoegle_max</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fordelingsnoegle_min" ALIGN="LEFT">esas_fordelingsnoegle_min</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fordelingsnoegle_prio_1" ALIGN="LEFT">esas_fordelingsnoegle_prio_1</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fordelingsnoegle_prio_2" ALIGN="LEFT">esas_fordelingsnoegle_prio_2</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_indskrivningsform_id" ALIGN="LEFT">esas_indskrivningsform_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_karakterskala" ALIGN="LEFT">esas_karakterskala</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_laas_uddannelseselement" ALIGN="LEFT">esas_laas_uddannelseselement</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_loebenummer" ALIGN="LEFT">esas_loebenummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_loennet" ALIGN="LEFT">esas_loennet</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_navn_engelsk" ALIGN="LEFT">esas_navn_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_oevrige_krav_laast" ALIGN="LEFT">esas_oevrige_krav_laast</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_overordnet_uddannelseselement_id" ALIGN="LEFT">esas_overordnet_uddannelseselement_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_paakraevet_udlandsophold" ALIGN="LEFT">esas_paakraevet_udlandsophold</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_publicering_id" ALIGN="LEFT">esas_publicering_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_redigeringsgrund" ALIGN="LEFT">esas_redigeringsgrund</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_relateret_sue_id" ALIGN="LEFT">esas_relateret_sue_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_rund_op_til_bestaaet" ALIGN="LEFT">esas_rund_op_til_bestaaet</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_semester_nummer" ALIGN="LEFT">esas_semester_nummer</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_skal_bestaas" ALIGN="LEFT">esas_skal_bestaas</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_skal_paa_bevis" ALIGN="LEFT">esas_skal_paa_bevis</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_slutdato" ALIGN="LEFT">esas_slutdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_sortering_raekkefoelge" ALIGN="LEFT">esas_sortering_raekkefoelge</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_sprog_id" ALIGN="LEFT">esas_sprog_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_staa_indberettes" ALIGN="LEFT">esas_staa_indberettes</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_startdato" ALIGN="LEFT">esas_startdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_sue_nummer" ALIGN="LEFT">esas_sue_nummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_timevaegt" ALIGN="LEFT">esas_timevaegt</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_type" ALIGN="LEFT">esas_type</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_udbud_af_valgfag_id" ALIGN="LEFT">esas_udbud_af_valgfag_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uddannelseselementId" ALIGN="LEFT">esas_uddannelseselementId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uddannelsesstruktur_id" ALIGN="LEFT">esas_uddannelsesstruktur_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_udlandsophold_laast" ALIGN="LEFT">esas_udlandsophold_laast</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_underkarakter" ALIGN="LEFT">esas_underkarakter</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_uvm_fagkode" ALIGN="LEFT">esas_uvm_fagkode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_vaegtning" ALIGN="LEFT">esas_vaegtning</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_valgfag_paa_semester" ALIGN="LEFT">esas_valgfag_paa_semester</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_valgfrit" ALIGN="LEFT">esas_valgfrit</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Studieforloeb [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>Studieforloeb</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_adgangsgrundlag" ALIGN="LEFT">esas_adgangsgrundlag</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_afdeling_id" ALIGN="LEFT">esas_afdeling_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_afgangsdato" ALIGN="LEFT">esas_afgangsdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_ag_danskproeve" ALIGN="LEFT">esas_ag_danskproeve</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_ag_danskproeve_aar" ALIGN="LEFT">esas_ag_danskproeve_aar</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_ag_eksamensaar" ALIGN="LEFT">esas_ag_eksamensaar</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_ag_eksamensgennemsnit" ALIGN="LEFT">esas_ag_eksamensgennemsnit</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_ag_eksamensland_id" ALIGN="LEFT">esas_ag_eksamensland_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_ag_eksamenstype" ALIGN="LEFT">esas_ag_eksamenstype</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_ag_total_points" ALIGN="LEFT">esas_ag_total_points</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_aktivitetsudbud_id" ALIGN="LEFT">esas_aktivitetsudbud_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_ansoegning_id" ALIGN="LEFT">esas_ansoegning_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_audd_kode_id" ALIGN="LEFT">esas_audd_kode_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_bevisgrundlag_id" ALIGN="LEFT">esas_bevisgrundlag_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_cpr_nummer" ALIGN="LEFT">esas_cpr_nummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_danskproeve_niveau" ALIGN="LEFT">esas_danskproeve_niveau</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_eksamensresultat" ALIGN="LEFT">esas_eksamensresultat</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_eksamenstype_id" ALIGN="LEFT">esas_eksamenstype_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_fejlbesked_fra_inrule" ALIGN="LEFT">esas_fejlbesked_fra_inrule</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_forventet_afslutning" ALIGN="LEFT">esas_forventet_afslutning</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_genindskrivningsdato" ALIGN="LEFT">esas_genindskrivningsdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_inaktiv_status_per" ALIGN="LEFT">esas_inaktiv_status_per</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_indskrivningsform_id" ALIGN="LEFT">esas_indskrivningsform_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_internationalisering" ALIGN="LEFT">esas_internationalisering</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_national_afgangsaarsag_id" ALIGN="LEFT">esas_national_afgangsaarsag_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_navne_addressebeskyttet" ALIGN="LEFT">esas_navne_addressebeskyttet</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_opnaaet_ects" ALIGN="LEFT">esas_opnaaet_ects</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_prioritet" ALIGN="LEFT">esas_prioritet</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_regeltjek_koert" ALIGN="LEFT">esas_regeltjek_koert</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_rest_ects" ALIGN="LEFT">esas_rest_ects</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_resterende_staa" ALIGN="LEFT">esas_resterende_staa</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_sammenlagt_fartstid" ALIGN="LEFT">esas_sammenlagt_fartstid</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_studerende_id" ALIGN="LEFT">esas_studerende_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_studieforloebId" ALIGN="LEFT">esas_studieforloebId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_studiestart" ALIGN="LEFT">esas_studiestart</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_talentbekendtgoerelse" ALIGN="LEFT">esas_talentbekendtgoerelse</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_tidligere_uddannelsesstruktur_id" ALIGN="LEFT">esas_tidligere_uddannelsesstruktur_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uddannelsespaalaeg" ALIGN="LEFT">esas_uddannelsespaalaeg</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_uddannelsesstruktur_id" ALIGN="LEFT">esas_uddannelsesstruktur_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_udloest_staa" ALIGN="LEFT">esas_udloest_staa</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Afdeling [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>Afdeling</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_account_id" ALIGN="LEFT">esas_account_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_afdelingId" ALIGN="LEFT">esas_afdelingId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_afdelingsniveau_id" ALIGN="LEFT">esas_afdelingsniveau_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_alarmer_om_uhentede_bilag" ALIGN="LEFT">esas_alarmer_om_uhentede_bilag</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_antal_dage_foer_periodes_start" ALIGN="LEFT">esas_antal_dage_foer_periodes_start</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_antal_uger_foer_periode_start" ALIGN="LEFT">esas_antal_uger_foer_periode_start</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_educational_institution" ALIGN="LEFT">esas_educational_institution</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_haandtering_af_studienummer" ALIGN="LEFT">esas_haandtering_af_studienummer</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_i_drift" ALIGN="LEFT">esas_i_drift</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_institutionsnummer" ALIGN="LEFT">esas_institutionsnummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_betinget_aau" ALIGN="LEFT">esas_kommunikation_betinget_aau</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_betinget_aau_engelsk" ALIGN="LEFT">esas_kommunikation_betinget_aau_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_betinget_ou" ALIGN="LEFT">esas_kommunikation_betinget_ou</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_betinget_ou_engelsk" ALIGN="LEFT">esas_kommunikation_betinget_ou_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_hjaelp_aau" ALIGN="LEFT">esas_kommunikation_hjaelp_aau</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_hjaelp_aau_engelsk" ALIGN="LEFT">esas_kommunikation_hjaelp_aau_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_hjaelp_ou" ALIGN="LEFT">esas_kommunikation_hjaelp_ou</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_hjaelp_ou_engelsk" ALIGN="LEFT">esas_kommunikation_hjaelp_ou_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_ikv_rkv_aau" ALIGN="LEFT">esas_kommunikation_ikv_rkv_aau</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_ikv_rkv_aau_engelsk" ALIGN="LEFT">esas_kommunikation_ikv_rkv_aau_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_ikv_rkv_ou" ALIGN="LEFT">esas_kommunikation_ikv_rkv_ou</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_ikv_rkv_ou_engelsk" ALIGN="LEFT">esas_kommunikation_ikv_rkv_ou_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_klage_aau" ALIGN="LEFT">esas_kommunikation_klage_aau</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_klage_aau_engelsk" ALIGN="LEFT">esas_kommunikation_klage_aau_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_klage_ou" ALIGN="LEFT">esas_kommunikation_klage_ou</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_klage_ou_engelsk" ALIGN="LEFT">esas_kommunikation_klage_ou_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_ledige_pladser_aau" ALIGN="LEFT">esas_kommunikation_ledige_pladser_aau</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_ledige_pladser_aau_engelsk" ALIGN="LEFT">esas_kommunikation_ledige_pladser_aau_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_ledige_pladser_ou" ALIGN="LEFT">esas_kommunikation_ledige_pladser_ou</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_ledige_pladser_ou_engelsk" ALIGN="LEFT">esas_kommunikation_ledige_pladser_ou_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_studiestart_aau" ALIGN="LEFT">esas_kommunikation_studiestart_aau</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_studiestart_aau_engelsk" ALIGN="LEFT">esas_kommunikation_studiestart_aau_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_studiestart_ou" ALIGN="LEFT">esas_kommunikation_studiestart_ou</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kommunikation_studiestart_ou_engelsk" ALIGN="LEFT">esas_kommunikation_studiestart_ou_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_overordnet_afdeling_id" ALIGN="LEFT">esas_overordnet_afdeling_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_periode_lige_semester_sommer_id" ALIGN="LEFT">esas_periode_lige_semester_sommer_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_periode_lige_semester_vinter_id" ALIGN="LEFT">esas_periode_lige_semester_vinter_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_periode_ulige_semester_sommer_id" ALIGN="LEFT">esas_periode_ulige_semester_sommer_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_periode_ulige_semester_vinter_id" ALIGN="LEFT">esas_periode_ulige_semester_vinter_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+InstitutionVirksomhed [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>InstitutionVirksomhed</td></tr>
+<tr><td PORT="AccountId" ALIGN="LEFT">AccountId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="AccountNumber" ALIGN="LEFT">AccountNumber</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="Address1_City" ALIGN="LEFT">Address1_City</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="Address1_Line1" ALIGN="LEFT">Address1_Line1</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="Address1_Line2" ALIGN="LEFT">Address1_Line2</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="Address1_PostalCode" ALIGN="LEFT">Address1_PostalCode</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="Name" ALIGN="LEFT">Name</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="ParentAccountId" ALIGN="LEFT">ParentAccountId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="WebSiteUrl" ALIGN="LEFT">WebSiteUrl</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_antal_pladser" ALIGN="LEFT">esas_antal_pladser</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_branche_id" ALIGN="LEFT">esas_branche_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_cvr_id" ALIGN="LEFT">esas_cvr_id</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_cvr_nummer" ALIGN="LEFT">esas_cvr_nummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_cvr_status" ALIGN="LEFT">esas_cvr_status</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_ean_nummer" ALIGN="LEFT">esas_ean_nummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_juridisk_enhed" ALIGN="LEFT">esas_juridisk_enhed</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_land_id" ALIGN="LEFT">esas_land_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_offentlig_myndighed" ALIGN="LEFT">esas_offentlig_myndighed</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_p_nummer" ALIGN="LEFT">esas_p_nummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_postnummer_by_id" ALIGN="LEFT">esas_postnummer_by_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_sammenflet" ALIGN="LEFT">esas_sammenflet</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_sidste_cvr_opdatering" ALIGN="LEFT">esas_sidste_cvr_opdatering</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_status_fra_integration" ALIGN="LEFT">esas_status_fra_integration</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_udenlandsk" ALIGN="LEFT">esas_udenlandsk</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_virksomhedsnummer" ALIGN="LEFT">esas_virksomhedsnummer</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_vist_institutionsoplysning_id" ALIGN="LEFT">esas_vist_institutionsoplysning_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Person [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>Person</td></tr>
+<tr><td PORT="Address1_Line1" ALIGN="LEFT">Address1_Line1</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="Address1_Line2" ALIGN="LEFT">Address1_Line2</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="BirthDate" ALIGN="LEFT">BirthDate</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ContactId" ALIGN="LEFT">ContactId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="FirstName" ALIGN="LEFT">FirstName</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="FullName" ALIGN="LEFT">FullName</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="GenderCode" ALIGN="LEFT">GenderCode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="LastName" ALIGN="LEFT">LastName</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="MiddleName" ALIGN="LEFT">MiddleName</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_alternativt_cpr_nummer" ALIGN="LEFT">esas_alternativt_cpr_nummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_cpr_id" ALIGN="LEFT">esas_cpr_id</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_cpr_nummer" ALIGN="LEFT">esas_cpr_nummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_cpr_nummer_uden_formatering" ALIGN="LEFT">esas_cpr_nummer_uden_formatering</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_cpr_personstatus" ALIGN="LEFT">esas_cpr_personstatus</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_cpr_seneste_opdatering" ALIGN="LEFT">esas_cpr_seneste_opdatering</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_kommune_id" ALIGN="LEFT">esas_kommune_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_land_id" ALIGN="LEFT">esas_land_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_navne_addressebeskyttet" ALIGN="LEFT">esas_navne_addressebeskyttet</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_personid" ALIGN="LEFT">esas_personid</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_postnummer_by_id" ALIGN="LEFT">esas_postnummer_by_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_statsborgerskab_id" ALIGN="LEFT">esas_statsborgerskab_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Aktivitetsudbud [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>Aktivitetsudbud</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_aktivitetsafdeling_id" ALIGN="LEFT">esas_aktivitetsafdeling_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_aktivitetsudbudId" ALIGN="LEFT">esas_aktivitetsudbudId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_institutionsafdeling_id" ALIGN="LEFT">esas_institutionsafdeling_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_ophoersdato" ALIGN="LEFT">esas_ophoersdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_uddannelsesstruktur_id" ALIGN="LEFT">esas_uddannelsesstruktur_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Uddannelsesstruktur [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>Uddannelsesstruktur</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_antal_dage_foer_periodes_start" ALIGN="LEFT">esas_antal_dage_foer_periodes_start</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_fejlbesked_fra_inrule" ALIGN="LEFT">esas_fejlbesked_fra_inrule</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_field_of_study" ALIGN="LEFT">esas_field_of_study</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_regeltjek_koert" ALIGN="LEFT">esas_regeltjek_koert</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_slutdato" ALIGN="LEFT">esas_slutdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_startdato" ALIGN="LEFT">esas_startdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_studieretning" ALIGN="LEFT">esas_studieretning</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_uddannelsens_hjemmeside_link" ALIGN="LEFT">esas_uddannelsens_hjemmeside_link</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_uddannelsesaktivitet_id" ALIGN="LEFT">esas_uddannelsesaktivitet_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uddannelsesstrukturId" ALIGN="LEFT">esas_uddannelsesstrukturId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uddannelsestype" ALIGN="LEFT">esas_uddannelsestype</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Fagpersonsrelation [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>Fagpersonsrelation</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_bedoemmelse_id" ALIGN="LEFT">esas_bedoemmelse_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_fagperson_id" ALIGN="LEFT">esas_fagperson_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_fagpersonsrelationId" ALIGN="LEFT">esas_fagpersonsrelationId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_hold_id" ALIGN="LEFT">esas_hold_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_planlaegningsuddannelseselement_id" ALIGN="LEFT">esas_planlaegningsuddannelseselement_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+GennemfoerelsesUddannelseselement [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>GennemfoerelsesUddannelseselement</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_aktivitet_type" ALIGN="LEFT">esas_aktivitet_type</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_aktivitetsafdeling_id" ALIGN="LEFT">esas_aktivitetsafdeling_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_antal_forsoeg" ALIGN="LEFT">esas_antal_forsoeg</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_antal_merit_registreringer" ALIGN="LEFT">esas_antal_merit_registreringer</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_bedoemmelsesresultat_7_trin" ALIGN="LEFT">esas_bedoemmelsesresultat_7_trin</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_bedoemmelsesresultat_bestaaet_ikke" ALIGN="LEFT">esas_bedoemmelsesresultat_bestaaet_ikke</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_bedoemmelsesresultat_id" ALIGN="LEFT">esas_bedoemmelsesresultat_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_beregnet_bestaaet" ALIGN="LEFT">esas_beregnet_bestaaet</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_ects" ALIGN="LEFT">esas_ects</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_fejlbesked_fra_inrule" ALIGN="LEFT">esas_fejlbesked_fra_inrule</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_hold_id" ALIGN="LEFT">esas_hold_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_indskrivningsform_id" ALIGN="LEFT">esas_indskrivningsform_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_pue_id" ALIGN="LEFT">esas_pue_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_registreret_merit" ALIGN="LEFT">esas_registreret_merit</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_semester_nummer" ALIGN="LEFT">esas_semester_nummer</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_slutdato" ALIGN="LEFT">esas_slutdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_startdato" ALIGN="LEFT">esas_startdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_studieforloeb_id" ALIGN="LEFT">esas_studieforloeb_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_udbud_af_valgfag_id" ALIGN="LEFT">esas_udbud_af_valgfag_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uddannelseselement_gennemfoerelseId" ALIGN="LEFT">esas_uddannelseselement_gennemfoerelseId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uddannelseselement_id" ALIGN="LEFT">esas_uddannelseselement_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uvm_fagkode" ALIGN="LEFT">esas_uvm_fagkode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Personoplysning [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>Personoplysning</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_arbejdsemail" ALIGN="LEFT">esas_arbejdsemail</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_arbejdstelefonnummer" ALIGN="LEFT">esas_arbejdstelefonnummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_dokumentafsendelsesmetode" ALIGN="LEFT">esas_dokumentafsendelsesmetode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_eksternt_link" ALIGN="LEFT">esas_eksternt_link</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_fagpersontype" ALIGN="LEFT">esas_fagpersontype</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_integration_id" ALIGN="LEFT">esas_integration_id</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_kaldenavn" ALIGN="LEFT">esas_kaldenavn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_lokalt_studienummer" ALIGN="LEFT">esas_lokalt_studienummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_mobiltelefonnummer" ALIGN="LEFT">esas_mobiltelefonnummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_person_id" ALIGN="LEFT">esas_person_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_personoplysningerId" ALIGN="LEFT">esas_personoplysningerId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_privatemail" ALIGN="LEFT">esas_privatemail</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_privattelefonnummer" ALIGN="LEFT">esas_privattelefonnummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_rolle" ALIGN="LEFT">esas_rolle</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_sidst_faktureret" ALIGN="LEFT">esas_sidst_faktureret</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_sso_id" ALIGN="LEFT">esas_sso_id</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_studieemail" ALIGN="LEFT">esas_studieemail</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Hold [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>Hold</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_antal_uddannelseselement_gennemfoerelse" ALIGN="LEFT">esas_antal_uddannelseselement_gennemfoerelse</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_holdId" ALIGN="LEFT">esas_holdId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_holdnummer" ALIGN="LEFT">esas_holdnummer</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_holdrelation_id" ALIGN="LEFT">esas_holdrelation_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_holdtype" ALIGN="LEFT">esas_holdtype</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_institution_id" ALIGN="LEFT">esas_institution_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_loebenr" ALIGN="LEFT">esas_loebenr</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_navn_dansk" ALIGN="LEFT">esas_navn_dansk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_navn_engelsk" ALIGN="LEFT">esas_navn_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_planlaegningsuddannelseselement_id" ALIGN="LEFT">esas_planlaegningsuddannelseselement_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_slutdato" ALIGN="LEFT">esas_slutdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_startdato" ALIGN="LEFT">esas_startdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Uddannelsesaktivitet [
+ rankdir=LR shape=plaintext
+ label=<<table border='1' bgcolor='lightskyblue' cellborder='1' color='aliceblue'> <tr><td colspan='2'>Uddannelsesaktivitet</td></tr>
+<tr><td PORT="CreatedOn" ALIGN="LEFT">CreatedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="ModifiedOn" ALIGN="LEFT">ModifiedOn</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="OwningBusinessUnit" ALIGN="LEFT">OwningBusinessUnit</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_afsluttet_inden" ALIGN="LEFT">esas_afsluttet_inden</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_aktivitetsgruppekode" ALIGN="LEFT">esas_aktivitetsgruppekode</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_antal_semestre" ALIGN="LEFT">esas_antal_semestre</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_bekendtgoerelse_id" ALIGN="LEFT">esas_bekendtgoerelse_id</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_betegnelse" ALIGN="LEFT">esas_betegnelse</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_betegnelse_engelsk" ALIGN="LEFT">esas_betegnelse_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_cosa_formaalskode" ALIGN="LEFT">esas_cosa_formaalskode</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_delformaal" ALIGN="LEFT">esas_delformaal</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_dst_kode" ALIGN="LEFT">esas_dst_kode</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_ects_loft_praktik" ALIGN="LEFT">esas_ects_loft_praktik</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_ects_loft_teori" ALIGN="LEFT">esas_ects_loft_teori</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_indberetning_af_optag" ALIGN="LEFT">esas_indberetning_af_optag</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_indberetning_af_staa_au" ALIGN="LEFT">esas_indberetning_af_staa_au</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_indberetning_af_staa_ou" ALIGN="LEFT">esas_indberetning_af_staa_ou</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_indberetning_af_su" ALIGN="LEFT">esas_indberetning_af_su</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_indberetning_til_soefartsstyrelsen" ALIGN="LEFT">esas_indberetning_til_soefartsstyrelsen</td><td ALIGN="LEFT">Edm.Boolean</td></tr>
+<tr><td PORT="esas_navn" ALIGN="LEFT">esas_navn</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_opgoerelsesmetode" ALIGN="LEFT">esas_opgoerelsesmetode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_ophoersdato" ALIGN="LEFT">esas_ophoersdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_samlet_ects" ALIGN="LEFT">esas_samlet_ects</td><td ALIGN="LEFT">Edm.Decimal</td></tr>
+<tr><td PORT="esas_start_indberetning_af_optag" ALIGN="LEFT">esas_start_indberetning_af_optag</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_start_indberetning_af_staa_au" ALIGN="LEFT">esas_start_indberetning_af_staa_au</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_start_indberetning_af_staa_ou" ALIGN="LEFT">esas_start_indberetning_af_staa_ou</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_start_indberetning_af_su" ALIGN="LEFT">esas_start_indberetning_af_su</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_start_indberetning_til_soefartsstyrelsen" ALIGN="LEFT">esas_start_indberetning_til_soefartsstyrelsen</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_startdato" ALIGN="LEFT">esas_startdato</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_stop_indberetning_af_optag" ALIGN="LEFT">esas_stop_indberetning_af_optag</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_stop_indberetning_af_staa_au" ALIGN="LEFT">esas_stop_indberetning_af_staa_au</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_stop_indberetning_af_staa_ou" ALIGN="LEFT">esas_stop_indberetning_af_staa_ou</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_stop_indberetning_af_su" ALIGN="LEFT">esas_stop_indberetning_af_su</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_stop_indberetning_til_soefartsstyrelsen" ALIGN="LEFT">esas_stop_indberetning_til_soefartsstyrelsen</td><td ALIGN="LEFT">Edm.DateTimeOffset</td></tr>
+<tr><td PORT="esas_su_retningskode" ALIGN="LEFT">esas_su_retningskode</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_titel" ALIGN="LEFT">esas_titel</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_titel_engelsk" ALIGN="LEFT">esas_titel_engelsk</td><td ALIGN="LEFT">Edm.String</td></tr>
+<tr><td PORT="esas_uddannelsesaktivitetId" ALIGN="LEFT">esas_uddannelsesaktivitetId</td><td ALIGN="LEFT">Edm.Guid</td></tr>
+<tr><td PORT="esas_uddannelsesdel" ALIGN="LEFT">esas_uddannelsesdel</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_uddannelsesform" ALIGN="LEFT">esas_uddannelsesform</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="esas_uddannelsestype" ALIGN="LEFT">esas_uddannelsestype</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statecode" ALIGN="LEFT">statecode</td><td ALIGN="LEFT">Edm.Int32</td></tr>
+<tr><td PORT="statuscode" ALIGN="LEFT">statuscode</td><td ALIGN="LEFT">Edm.Int32</td></tr> </table>
+>] [fillcolor=aliceblue style=filled fontname=Helvetica];
+
+Afdeling:esas_account_id -> InstitutionVirksomhed:AccountId
+Afdeling:esas_overordnet_afdeling_id -> Afdeling:esas_afdelingId
+Aktivitetsudbud:esas_aktivitetsafdeling_id -> Afdeling:esas_afdelingId
+Aktivitetsudbud:esas_institutionsafdeling_id -> Afdeling:esas_afdelingId
+Aktivitetsudbud:esas_uddannelsesstruktur_id -> Uddannelsesstruktur:esas_uddannelsesstrukturId
+Fagpersonsrelation:esas_fagperson_id -> Personoplysning:esas_personoplysningerId
+Fagpersonsrelation:esas_hold_id -> Hold:esas_holdId
+Fagpersonsrelation:esas_planlaegningsuddannelseselement_id -> PlanlaegningsUddannelseselement:esas_uddannelseselement_planlaegningId
+GennemfoerelsesUddannelseselement:esas_aktivitetsafdeling_id -> Afdeling:esas_afdelingId
+GennemfoerelsesUddannelseselement:esas_hold_id -> Hold:esas_holdId
+GennemfoerelsesUddannelseselement:esas_pue_id -> PlanlaegningsUddannelseselement:esas_uddannelseselement_planlaegningId
+GennemfoerelsesUddannelseselement:esas_studieforloeb_id -> Studieforloeb:esas_studieforloebId
+GennemfoerelsesUddannelseselement:esas_udbud_af_valgfag_id -> StruktureltUddannelseselement:esas_uddannelseselementId
+GennemfoerelsesUddannelseselement:esas_uddannelseselement_id -> StruktureltUddannelseselement:esas_uddannelseselementId
+Hold:esas_institution_id -> InstitutionVirksomhed:AccountId
+Hold:esas_planlaegningsuddannelseselement_id -> PlanlaegningsUddannelseselement:esas_uddannelseselement_planlaegningId
+Personoplysning:esas_person_id -> Person:ContactId
+PlanlaegningsUddannelseselement:esas_aktivitetsafdeling_id -> Afdeling:esas_afdelingId
+PlanlaegningsUddannelseselement:esas_aktivitetsudbud_id -> Aktivitetsudbud:esas_aktivitetsudbudId
+PlanlaegningsUddannelseselement:esas_gruppering_id -> StruktureltUddannelseselement:esas_uddannelseselementId
+PlanlaegningsUddannelseselement:esas_semester_modul_id -> StruktureltUddannelseselement:esas_uddannelseselementId
+PlanlaegningsUddannelseselement:esas_uddannelseselement_id -> StruktureltUddannelseselement:esas_uddannelseselementId
+StruktureltUddannelseselement:esas_uddannelsesstruktur_id -> Uddannelsesstruktur:esas_uddannelsesstrukturId
+Studieforloeb:esas_afdeling_id -> Afdeling:esas_afdelingId
+Studieforloeb:esas_aktivitetsudbud_id -> Aktivitetsudbud:esas_aktivitetsudbudId
+Studieforloeb:esas_studerende_id -> Person:ContactId
+Studieforloeb:esas_tidligere_uddannelsesstruktur_id -> Uddannelsesstruktur:esas_uddannelsesstrukturId
+Studieforloeb:esas_uddannelsesstruktur_id -> Uddannelsesstruktur:esas_uddannelsesstrukturId
+Uddannelsesstruktur:esas_uddannelsesaktivitet_id -> Uddannelsesaktivitet:esas_uddannelsesaktivitetId
+}

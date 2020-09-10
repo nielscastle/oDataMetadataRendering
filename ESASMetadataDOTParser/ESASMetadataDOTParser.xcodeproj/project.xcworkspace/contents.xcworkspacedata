@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../libraries/fplus/fplus.hpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/castle/Documents/Repos/ESASMetadataDOTParser/ESASMetadataDOTParser/ESASMetadataDOTParser/main.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/castle/Documents/Repos/ESASMetadataDOTParser/ESASMetadataDOTParser/ESASMetadataDOTParser/run.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/castle/Documents/Repos/ESASMetadataDOTParser/ESASMetadataDOTParser/ESASMetadataDOTParser/tinyxml2.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/castle/Documents/Repos/ESASMetadataDOTParser/ESASMetadataDOTParser/ESASMetadataDOTParser/tinyxml2.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/castle/Documents/Repos/ESASMetadataDOTParser/ESASMetadataDOTParser/ESASMetadataDOTParser/xml_to_dot.hpp">
+   </FileRef>
+   <FileRef
+      location = "self:ESASMetadataDOTParser.xcodeproj">
+   </FileRef>
+</Workspace>
