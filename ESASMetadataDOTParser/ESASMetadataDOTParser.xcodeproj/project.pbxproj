@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		7B5F257A2509932100901DFB /* ESASMetadataDOTParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ESASMetadataDOTParser; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5F257D2509932100901DFB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		7B5F2586250993AD00901DFB /* tinyxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tinyxml2.h; path = /Users/castle/Documents/Repos/ESASMetadataDOTParser/ESASMetadataDOTParser/ESASMetadataDOTParser/tinyxml2.h; sourceTree = "<absolute>"; };
-		7B5F2588250993AD00901DFB /* tinyxml2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml2.cpp; path = /Users/castle/Documents/Repos/ESASMetadataDOTParser/ESASMetadataDOTParser/ESASMetadataDOTParser/tinyxml2.cpp; sourceTree = "<absolute>"; };
+		7B5F2586250993AD00901DFB /* tinyxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tinyxml2.h; path = ESASMetadataDOTParser/tinyxml2.h; sourceTree = SOURCE_ROOT; };
+		7B5F2588250993AD00901DFB /* tinyxml2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml2.cpp; path = ESASMetadataDOTParser/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
 		7B5F2589250993AD00901DFB /* fplus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = fplus.hpp; path = ESASMetadataDOTParser.xcodeproj/../libraries/fplus/fplus.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
