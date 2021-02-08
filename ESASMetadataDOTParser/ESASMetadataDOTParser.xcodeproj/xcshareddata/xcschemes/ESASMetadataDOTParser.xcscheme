@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7B5F25792509932100901DFB"
-               BuildableName = "ESASMetadataDOTParser"
-               BlueprintName = "ESASMetadataDOTParser"
+               BuildableName = "esasdot"
+               BlueprintName = "esasdot"
                ReferencedContainer = "container:ESASMetadataDOTParser.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B5F25792509932100901DFB"
-            BuildableName = "ESASMetadataDOTParser"
-            BlueprintName = "ESASMetadataDOTParser"
+            BuildableName = "esasdot"
+            BlueprintName = "esasdot"
             ReferencedContainer = "container:ESASMetadataDOTParser.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -57,6 +57,10 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/tmp/ER.dot"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "Hold"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -72,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B5F25792509932100901DFB"
-            BuildableName = "ESASMetadataDOTParser"
-            BlueprintName = "ESASMetadataDOTParser"
+            BuildableName = "esasdot"
+            BlueprintName = "esasdot"
             ReferencedContainer = "container:ESASMetadataDOTParser.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
