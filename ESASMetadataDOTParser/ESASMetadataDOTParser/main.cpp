@@ -1,28 +1,29 @@
 /*
-Original code by Castle+Andersen ApS (www.castleandersen.dk)
-
-This software is provided 'as-is', without any express or implied
-warranty. In no event will the authors be held liable for any
-damages arising from the use of this software.
-
-Permission is granted to anyone to use this software for any
-purpose, including commercial applications, and to alter it and
-redistribute it freely, subject to the following restrictions:
-
-1. The origin of this software must not be misrepresented; you must
-not claim that you wrote the original software. If you use this
-software in a product, an acknowledgment in the product documentation
-would be appreciated but is not required.
-
-2. Altered source versions must be plainly marked as such, and
-must not be misrepresented as being the original software.
-
-3. This notice may not be removed or altered from any source
-distribution.
-*/
+ Original code by Castle+Andersen ApS (castleandersen.dk)
+ 
+ This software is provided 'as-is', without any express or implied
+ warranty. In no event will the authors be held liable for any
+ damages arising from the use of this software.
+ 
+ Permission is granted to anyone to use this software for any
+ purpose, including commercial applications, and to alter it and
+ redistribute it freely, subject to the following restrictions:
+ 
+ 1. The origin of this software must not be misrepresented; you must
+ not claim that you wrote the original software. If you use this
+ software in a product, an acknowledgment in the product documentation
+ would be appreciated but is not required.
+ 
+ 2. Altered source versions must be plainly marked as such, and
+ must not be misrepresented as being the original software.
+ 
+ 3. This notice may not be removed or altered from any source
+ distribution.
+ */
 
 #include "tinyxml2.h"
 #include <algorithm>
+#include <filesystem>
 #include <fstream>
 #include <iostream>
 #include <map>
@@ -30,7 +31,6 @@ distribution.
 #include <regex>
 #include <string>
 #include <vector>
-#include <filesystem>
 
 using namespace std;
 using namespace filesystem;
@@ -77,73 +77,6 @@ typedef map<string, string> Properties;
 typedef vector<string> Strings;
 typedef std::map<string, vector<string>> Associations;
 
-Associations associations;
-
-const vector<string> skipList = {
-    //    "Adgangskrav",
-    //    "Eksamenstype",
-    "Afdeling",
-    //    "Afslagsbegrundelse",
-    //    "Postnummer",
-    //    "Land",
-    //    "Branche",
-    "Aktivitetsudbud",
-    //    "Ansoeger",
-    //    "Ansoegning",
-    //    "Ansoegningshandling",
-    //    "Ansoegningskort",
-    //    "AnsoegningskortOpsaetning",
-    //    "AnsoegningskortTekst",
-    //    "Ansoegningsopsaetning",
-    //    "Bedoemmelse",
-    //    "Bedoemmelsesrunde",
-    //    "Bevisgrundlag",
-    //    "Bilag",
-    "Fagpersonsrelation",
-    //    "Fravaersaarsag",
-    //    "Gebyrtype",
-    "GennemfoerelsesUddannelseselement",
-    //    "GymnasielleFagkrav",
-    //    "GymnasielleKarakterkrav",
-    "Hold",
-    //    "Institutionsoplysninger",
-    "InstitutionVirksomhed",
-    //    "Internationalisering",
-    //    "Karakter",
-    //    "Kommunikation",
-    //    "Kvalifikationskriterie",
-    //    "Kvalifikationspoint",
-    //    "MeritRegistrering",
-    //    "NationalAfgangsaarsag",
-    //    "Omraadenummer",
-    //    "Omraadenummeropsaetning",
-    //    "Omraadespecialisering",
-    //    "OptionSetValueString",
-    "Person",
-    "Personoplysning",
-    "PlanlaegningsUddannelseselement",
-    //    "Praktikomraade",
-    //    "Praktikophold",
-    //    "RelationsStatus",
-    //    "Publicering",
-    "StruktureltUddannelseselement",
-    "Studieforloeb",
-    //    "StudieinaktivPeriode",
-    //    "SystemUser",
-    "Uddannelsesstruktur",
-    "Uddannelsesaktivitet",
-    //    "Enkeltfag",
-    //    "Specialisering",
-    //    "AndenAktivitet",
-    //    "Erfaringer",
-    //    "KOTGruppe",
-    //    "KOTGruppeTilmelding",
-    //    "KurserSkoleophold",
-    //    "Proeve",
-    //    "UdlandsopholdAnsoegning",
-    //    "VideregaaendeUddannelse",
-};
-
 /**
  * Helpers
  */
@@ -160,17 +93,7 @@ void log( Args... args ) {
 
 struct Graph {
 
-    explicit Graph( const string &name ) {
-        auto start = string{};
-        append_to_string( start, "digraph ", name, "{" );
-        elements.emplace_back( start );
-    }
-
-    void end() {
-        elements.emplace_back( "}" );
-    }
-
-    static void add_entity( const string &name, const string &type ) {
+    void add_entity( const string &name, const string &type ) {
         for ( auto &[key, value] : associations ) {
             for ( auto &i : value ) {
                 if ( i == type ) {
@@ -181,10 +104,6 @@ struct Graph {
     }
 
     void add_table( const string &name, const map<string, string> &propterties ) {
-
-        if ( find( skipList.begin(), skipList.end(), name ) == skipList.end() ) {
-            return;
-        }
 
         constexpr auto &border = "\'1\'";
         constexpr auto &cellBorder = "\'1\'";
@@ -229,100 +148,171 @@ struct Graph {
     }
 
     void print_graph( ostream &stream ) {
-        for ( const auto &i : elements )
+
+        stream << "digraph Data {" << endl;
+
+        for ( const auto &i : elements ) {
             stream << i << endl;
-    }
-
-  private:
-    vector<string> elements;
-};
-
-static Graph graph( "Data" );
-
-map<string, string> find_all_properties( const XMLElement *element, const string &name ) {
-    map<string, string> properties;
-    for ( const XMLElement *child = element->FirstChildElement(); child != nullptr; child = child->NextSiblingElement() ) {
-
-        if ( child->Name() == EDMPropertyType::Property ) {
-            properties[child->Attribute( EDMAttributeType::Name.data() )] = child->Attribute( EDMAttributeType::Type.data() );
         }
 
-        if ( child->Name() == EDMPropertyType::NavigationProperty ) {
+        stream << "}" << endl;
+    }
 
-            string type = child->Attribute( EDMAttributeType::Type.data() );
-            for ( const XMLElement *innerchild = child->FirstChildElement(); innerchild != nullptr; innerchild = innerchild->NextSiblingElement() ) {
-                if ( innerchild->Name() == EDMPropertyType::ReferentialConstraint ) {
+    map<string, string> find_all_properties( const XMLElement *element, const string &name ) {
+        map<string, string> properties;
+        for ( const XMLElement *child = element->FirstChildElement(); child != nullptr; child = child->NextSiblingElement() ) {
 
-                    string key{innerchild->Attribute( EDMAttributeType::Property.data() )};
-                    string value{innerchild->Attribute( EDMAttributeType::ReferencedProperty.data() )};
+            if ( child->Name() == EDMPropertyType::Property ) {
+                properties[child->Attribute( EDMAttributeType::Name.data() )] = child->Attribute( EDMAttributeType::Type.data() );
+            }
 
-                    string dest = type;
-                    regex e{".*\\.(.+)$"};
-                    if ( regex_match( dest, e ) ) {
-                        dest = regex_replace( dest, e, "$1" );
+            if ( child->Name() == EDMPropertyType::NavigationProperty ) {
+
+                string type = child->Attribute( EDMAttributeType::Type.data() );
+                for ( const XMLElement *innerchild = child->FirstChildElement(); innerchild != nullptr; innerchild = innerchild->NextSiblingElement() ) {
+                    if ( innerchild->Name() == EDMPropertyType::ReferentialConstraint ) {
+
+                        string key{innerchild->Attribute( EDMAttributeType::Property.data() )};
+                        string value{innerchild->Attribute( EDMAttributeType::ReferencedProperty.data() )};
+
+                        string dest = type;
+                        regex e{".*\\.(.+)$"};
+                        if ( regex_match( dest, e ) ) {
+                            dest = regex_replace( dest, e, "$1" );
+                        }
+
+                        associations[name + ":" + key].push_back( dest + ":" + value );
                     }
-
-                    if ( find( skipList.begin(), skipList.end(), name ) == skipList.end() ) {
-                        continue;
-                    }
-                    if ( find( skipList.begin(), skipList.end(), dest ) == skipList.end() ) {
-                        continue;
-                    }
-
-                    associations[name + ":" + key].push_back( dest + ":" + value );
                 }
+            }
+        }
+
+        return properties;
+    }
+
+    void visit( const XMLElement *root ) {
+        for ( const XMLElement *child = root->FirstChildElement(); child != nullptr; child = child->NextSiblingElement() ) {
+            if ( child->Name() == EDMPropertyType::EntityType ) {
+                auto name = child->Attribute( EDMAttributeType::Name.data() );
+                auto properties = find_all_properties( child, name );
+                add_table( name, properties );
+            }
+
+            if ( child->Name() == EDMPropertyType::EntitySet ) {
+                auto name = child->Attribute( EDMAttributeType::Name.data() );
+                auto type = child->Attribute( EDMAttributeType::EntityType.data() );
+                add_entity( name, type );
+            }
+
+            visit( child );
+        }
+    }
+
+    void removeAllEntitiesNotRelatedTo( string centerEntity ) {
+
+        vector<string> relatedEnteties{centerEntity};
+
+        for ( auto &[sourceField, targetFields] : associations ) {
+
+            // Keep all relations going out of the center entity --
+
+            if ( sourceField.rfind( centerEntity + ":", 0 ) == 0 ) {
+                for ( const auto &field : targetFields ) {
+                    relatedEnteties.emplace_back( entityFromFieldName( field ) );
+                }
+                continue;
+            }
+
+            // Remove all relations to other entities --
+
+            targetFields.erase(
+                remove_if( targetFields.begin(), targetFields.end(), [&]( const string &field ) { return field.rfind( centerEntity + ":", 0 ) != 0; } ),
+                targetFields.end() );
+
+            if ( targetFields.size() > 0 ) {
+                relatedEnteties.emplace_back( entityFromFieldName( sourceField ) );
+            }
+        }
+
+        // Delete all references that are not related to the center entity --
+
+        for ( auto it = associations.begin(); it != associations.end(); ) {
+            if ( find( relatedEnteties.begin(), relatedEnteties.end(), entityFromFieldName( it->first ) ) == relatedEnteties.end() ) {
+                it = associations.erase( it );
+            } else {
+                ++it;
+            }
+        }
+
+        // Delete all entities that are not related to the center entity --
+
+        for ( auto it = elements.begin(); it != elements.end(); ) {
+
+            bool found = false;
+            for ( const auto &field : relatedEnteties ) {
+                found |= ( *it ).find( field ) == 0;
+            }
+
+            if ( !found ) {
+                it = elements.erase( it );
+            } else {
+                ++it;
             }
         }
     }
 
-    return properties;
-}
+  private:
+    vector<string> elements;
+    Associations associations;
 
-void visit( const XMLElement *root ) {
-    for ( const XMLElement *child = root->FirstChildElement(); child != nullptr; child = child->NextSiblingElement() ) {
-        if ( child->Name() == EDMPropertyType::EntityType ) {
-            auto name = child->Attribute( EDMAttributeType::Name.data() );
-            auto properties = find_all_properties( child, name );
-            graph.add_table( name, properties );
+    string entityFromFieldName( string const &fieldName ) {
+        std::string::size_type pos = fieldName.find( ':' );
+        if ( pos != std::string::npos ) {
+            return fieldName.substr( 0, pos );
         }
-
-        if ( child->Name() == EDMPropertyType::EntitySet ) {
-            auto name = child->Attribute( EDMAttributeType::Name.data() );
-            auto type = child->Attribute( EDMAttributeType::EntityType.data() );
-            graph.add_entity( name, type );
-        }
-
-        visit( child );
+        return fieldName;
     }
-}
+};
 
 auto main( int argc, char **argv ) -> int {
 
+    if ( argc < 3 ) {
+        cout << "Usage: prg <metadata file> <output dot file> <starting entity>" << endl;
+        return 1;
+    }
+
     auto xmlFileName = std::string_view{argv[1]}; // Input file
     auto dotFileName = std::string_view{argv[2]}; // Output file
+    string centerEntity{argv[3]};                 // Middle entity of graph, only include entities related to this
 
     XMLDocument doc;
     doc.LoadFile( xmlFileName.data() );
 
     const XMLElement *root = doc.FirstChildElement( EDMPropertyType::Edmx.data() );
     if ( root == nullptr ) {
-        cout << "Couldn't open input file " << path(xmlFileName).native()       << endl;
+        cout << "Couldn't open input file " << path( xmlFileName ).native() << endl;
         return 1;
     }
 
-    visit( root );
+    Graph graph;
+
+    graph.visit( root );
+    graph.removeAllEntitiesNotRelatedTo( centerEntity );
     graph.create_arrows();
-    graph.end();
 
     ofstream myfile( dotFileName );
     if ( myfile.is_open() ) {
         cout << "Processing ..." << endl;
         graph.print_graph( myfile );
-        cout << "Now use GraphViz to generate the diagram using:" << endl<<endl;
-        cout << "   /usr/local/bin/dot  -Tpdf " << dotFileName << "  -o /tmp/ER.pdf && open /tmp/ER.pdf" << endl << endl;
+        cout << "Now use GraphViz to generate the diagram using fdp, dot, neato or equivalent:" << endl
+             << endl;
+        cout << "   /usr/local/bin/dot  -Tpdf " << dotFileName << "  -o /tmp/ER.pdf && open /tmp/ER.pdf" << endl
+             << endl;
         cout << "Done." << endl;
         myfile.close();
-    } else
+    } else {
         cout << "Error writing to file!";
+    }
+
     return 0;
 }
