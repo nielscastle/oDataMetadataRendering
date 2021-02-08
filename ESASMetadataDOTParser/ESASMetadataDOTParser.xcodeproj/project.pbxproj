@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7B5F257A2509932100901DFB /* ESASMetadataDOTParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ESASMetadataDOTParser; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5F257A2509932100901DFB /* esasdot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = esasdot; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5F257D2509932100901DFB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		7B5F2586250993AD00901DFB /* tinyxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tinyxml2.h; path = ESASMetadataDOTParser/tinyxml2.h; sourceTree = SOURCE_ROOT; };
 		7B5F2588250993AD00901DFB /* tinyxml2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml2.cpp; path = ESASMetadataDOTParser/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
@@ -53,7 +53,7 @@
 		7B5F257B2509932100901DFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B5F257A2509932100901DFB /* ESASMetadataDOTParser */,
+				7B5F257A2509932100901DFB /* esasdot */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,9 +80,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B5F25792509932100901DFB /* ESASMetadataDOTParser */ = {
+		7B5F25792509932100901DFB /* esasdot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B5F25812509932100901DFB /* Build configuration list for PBXNativeTarget "ESASMetadataDOTParser" */;
+			buildConfigurationList = 7B5F25812509932100901DFB /* Build configuration list for PBXNativeTarget "esasdot" */;
 			buildPhases = (
 				7B5F25762509932100901DFB /* Sources */,
 				7B5F25772509932100901DFB /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = ESASMetadataDOTParser;
+			name = esasdot;
 			productName = ESASMetadataDOTParser;
-			productReference = 7B5F257A2509932100901DFB /* ESASMetadataDOTParser */;
+			productReference = 7B5F257A2509932100901DFB /* esasdot */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B5F25792509932100901DFB /* ESASMetadataDOTParser */,
+				7B5F25792509932100901DFB /* esasdot */,
 			);
 		};
 /* End PBXProject section */
@@ -308,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B5F25812509932100901DFB /* Build configuration list for PBXNativeTarget "ESASMetadataDOTParser" */ = {
+		7B5F25812509932100901DFB /* Build configuration list for PBXNativeTarget "esasdot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B5F25822509932100901DFB /* Debug */,
