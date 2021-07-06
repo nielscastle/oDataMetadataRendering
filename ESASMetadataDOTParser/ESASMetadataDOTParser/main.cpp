@@ -283,7 +283,10 @@ auto main( int argc, char **argv ) -> int {
 
     auto xmlFileName = std::string_view{argv[1]}; // Input file
     auto dotFileName = std::string_view{argv[2]}; // Output file
-    string centerEntity{argv[3]};                 // Middle entity of graph, only include entities related to this
+    string centerEntity{};
+    if(argc>3) {
+        centerEntity = argv[3];                // Middle entity of graph, only include entities related to this
+    }
 
     XMLDocument doc;
     doc.LoadFile( xmlFileName.data() );
@@ -297,7 +300,9 @@ auto main( int argc, char **argv ) -> int {
     Graph graph;
 
     graph.visit( root );
-    graph.removeAllEntitiesNotRelatedTo( centerEntity );
+    if(!centerEntity.empty()) {
+     graph.removeAllEntitiesNotRelatedTo( centerEntity );
+    }
     graph.create_arrows();
 
     ofstream myfile( dotFileName );
