@@ -56,12 +56,12 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/tmp/ER.dot"
+            argument = "/tmp/ER_full.dot"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "Hold"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
